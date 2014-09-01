@@ -4,7 +4,9 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="main.css">
-
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="app.js"></script>
+	<script src="html5sortable/jquery.sortable.js"></script>
 
 	<title>Shopping List</title>
 </head>
@@ -15,20 +17,21 @@
 	<div class="container">
 		<div class="box">
 			<h1>SHOPPING LIST</h1>
-			<input id="item" type="text" placeholder="Type here, then hit enter">
-			<p>Click items to cross out and drag items to sort</p>
-				<div class="list">
-					<ul>
-					<li><span class="delete">Milk<img src="images/delete.jpg"></span></li><br>
-					<li><span class="delete">eggs<img src="images/delete.jpg"></span></li><br>
-					<li><span class="delete">cereal<img src="images/delete.jpg"></span></li><br>
-					<div>
-						<li><span class="delete" id="crossed">bread<img src="images/delete.jpg"></span></li><br>
-						<li><span class="delete" id="crossed">bananas<img src="images/delete.jpg"></span></li>
-					</div>
-				</ul>
+			<form class="addToListForm">
+
+			<input id="item" type="text" placeholder="Type here, then hit enter"><button id="add">Add</button></input>
+			</form>
+			<p>Click items to cross out</p>
+
+				<div class="list"
+					<ul id="todolist">
+					<li class= "done"><span class="crossed">Milk<img class="delete" src="images/delete.jpg"></span></li>
+					<li class= "done"><span class="crossed">eggs<img class="delete" src="images/delete.jpg"></span></li>
+					<li class= "done"><span class="crossed">cereal<img class="delete" src="images/delete.jpg"></span></li>
+					</ul>
 				</div>
 		</div>
 	</div>
+
 </body>
 </html>

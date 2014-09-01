@@ -20,7 +20,7 @@
 	position: relative;
 	margin-top: 50px;
 	text-align: center;
-	padding-bottom: 25px;
+	padding-bottom: 45px;
 	padding-top: 25px;
 
 }
@@ -51,6 +51,7 @@ p{
 	font-weight: bold;
 	font-size: 15px;
 	padding-top: 20px;
+	text-align: center;
 }
 
 .list{
@@ -64,21 +65,20 @@ p{
 
 span{
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-weight: bold;
 	display: block;
 	padding-bottom: 10px;
 	padding-top: 10px;
-	background-color: #409369;
 	border-radius: 7px;
 	font-size: 20px;
+	background-color: #409369;
 
 }
-
+/*
 #crossed{
 	background-color: #FF3030;
-	text-decoration: line-through;
 
 }
+*/
 
 span .delete{
 	vertical-align: middle;
@@ -86,7 +86,7 @@ span .delete{
 
 }
 
-li span img{
+#todolist li span img{
 	position: relative;
 	height: 40px;
 	width: auto;
@@ -96,6 +96,21 @@ li span img{
 
 }
 
+li{
+	margin-bottom: 15px;
+	list-style-type: none;
+
+}
 
 
+#add{
+	font-size: 15px;
+	padding: 5px 5px 5px 5px;
+	border-radius: 15%;
+
+}
+
+.done{
+
+}
 
